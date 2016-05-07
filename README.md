@@ -13,7 +13,7 @@ regular expression matcher in Lua using Glushkov algorithm
   - "p|q" (alternation)  
   - "p&q" (and)
 
-- Does not include parser, but matcher
+- Does not include a parser, but a matcher only
 
 - For example, to match "[abc]*a|." against "ccaab"  
 ```
@@ -28,4 +28,4 @@ re  = regex_alt:new{ p = re4, q = re5 }
 print( match(re, "ccaab") )
 ```
 
-- Uses inheritance and derived classes written in Lua
+- Uses inheritance and derived classes written in Lua itself
