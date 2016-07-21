@@ -10,16 +10,16 @@ The NFA format is better suited for execution on a computer when regular express
 - include a regular expression engine only (does not include a text parser for regular expressions.)
 
 ## Supported regular expressions are:  
-- "c" (for a single character)  
-- "." (for any character)  
-- "[abc]" (character class)  
-- "[^abc]" (negated character class)
-- "r*" (Kleene closure)
-- "r?" (zero or one)
-- "r+" (positive closure)  
-- "pq" (concat)  
-- "p|q" (alternation)  
-- "p&q" (and)
+- `"c"` (for a single character)  
+- `"."` (for any character)  
+- `"[abc]"` (character class)  
+- `"[^abc]"` (negated character class)
+- `"r*"` (Kleene closure)
+- `"r?"` (zero or one)
+- `"r+"` (positive closure)  
+- `"pq"` (concat)  
+- `"p|q"` (alternation)  
+- `"p&q"` (and)
 
 ## Quick example
 - For example, to match `"[abc]*a|."` against `"ccaab"`  
